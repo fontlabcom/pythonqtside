@@ -1,0 +1,210 @@
+{
+ "classes": {
+  "QtGui.QDialogButtonBox": {
+   "__init__": {
+    "positions": [
+     {
+      "arities": [
+       1,
+       2
+      ],
+      "flags": "QtGui.QDialogButtonBox.StandardButtons",
+      "index": 0,
+      "keep": [
+       "QtCore.Qt.Orientation"
+      ]
+     }
+    ],
+    "static": false
+   }
+  },
+  "QtGui.QGraphicsView": {
+   "render": {
+    "positions": [
+     {
+      "arities": [
+       4,
+       4
+      ],
+      "flags": "QtGui.QWidget.RenderFlags",
+      "index": 3,
+      "keep": [
+       "QtCore.Qt.AspectRatioMode"
+      ]
+     }
+    ],
+    "static": false
+   }
+  },
+  "QtGui.QMessageBox": {
+   "critical": {
+    "positions": [
+     {
+      "arities": [
+       5,
+       5
+      ],
+      "flags": "QtGui.QMessageBox.StandardButtons",
+      "index": 3,
+      "keep": [
+       "QtGui.QMessageBox.StandardButton"
+      ]
+     }
+    ],
+    "static": true
+   },
+   "information": {
+    "positions": [
+     {
+      "arities": [
+       4,
+       5
+      ],
+      "flags": "QtGui.QMessageBox.StandardButtons",
+      "index": 3,
+      "keep": [
+       "QtGui.QMessageBox.StandardButton"
+      ]
+     }
+    ],
+    "static": true
+   },
+   "question": {
+    "positions": [
+     {
+      "arities": [
+       5,
+       5
+      ],
+      "flags": "QtGui.QMessageBox.StandardButtons",
+      "index": 3,
+      "keep": [
+       "QtGui.QMessageBox.StandardButton"
+      ]
+     }
+    ],
+    "static": true
+   },
+   "warning": {
+    "positions": [
+     {
+      "arities": [
+       5,
+       5
+      ],
+      "flags": "QtGui.QMessageBox.StandardButtons",
+      "index": 3,
+      "keep": [
+       "QtGui.QMessageBox.StandardButton"
+      ]
+     }
+    ],
+    "static": true
+   }
+  },
+  "QtGui.QSurfaceFormat": {
+   "setOption": {
+    "positions": [
+     {
+      "arities": [
+       1,
+       1
+      ],
+      "flags": "QtGui.QSurfaceFormat.FormatOptions",
+      "index": 0,
+      "keep": [
+       "QtGui.QSurfaceFormat.FormatOption"
+      ]
+     }
+    ],
+    "static": false
+   },
+   "testOption": {
+    "positions": [
+     {
+      "arities": [
+       1,
+       1
+      ],
+      "flags": "QtGui.QSurfaceFormat.FormatOptions",
+      "index": 0,
+      "keep": [
+       "QtGui.QSurfaceFormat.FormatOption"
+      ]
+     }
+    ],
+    "static": false
+   }
+  },
+  "QtGui.QWheelEvent": {
+   "__init__": {
+    "positions": [
+     {
+      "arities": [
+       5,
+       5
+      ],
+      "flags": "QtCore.Qt.KeyboardModifiers",
+      "index": 4,
+      "keep": [
+       "QtCore.Qt.Orientation"
+      ]
+     },
+     {
+      "arities": [
+       8,
+       9
+      ],
+      "flags": "QtCore.Qt.KeyboardModifiers",
+      "index": 5,
+      "keep": [
+       "QtCore.Qt.Orientation"
+      ]
+     },
+     {
+      "arities": [
+       8,
+       9
+      ],
+      "flags": "QtCore.Qt.MouseButtons",
+      "index": 6,
+      "keep": [
+       "QtCore.Qt.ScrollPhase"
+      ]
+     }
+    ],
+    "static": false
+   }
+  },
+  "QtNetwork.QSslSocket": {
+   "connectToHostEncrypted": {
+    "positions": [
+     {
+      "arities": [
+       4,
+       4
+      ],
+      "flags": "QtCore.QIODevice.OpenMode",
+      "index": 3,
+      "keep": [
+       "QtNetwork.QAbstractSocket.NetworkLayerProtocol"
+      ]
+     }
+    ],
+    "static": false
+   }
+  }
+ },
+ "counts": {
+  "flag_classes": 120,
+  "methods": 10,
+  "positions": 12
+ },
+ "inventory_sha256": "5cf93af269d8b166acf3b6d60c153547ea1039336d19829edd1b8216c9ea23ee",
+ "limitations": [
+  "QFlags classes are PySide2 nested classes with an empty body that are not enums.",
+  "Positions where an overload of the same arity takes int are left out: an int cannot be attributed.",
+  "Native acceptance covers the QDialogButtonBox constructor; the modal QMessageBox statics are unverified."
+ ],
+ "schema_version": 1
+}

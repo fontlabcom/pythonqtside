@@ -1,0 +1,1975 @@
+{
+ "classes": {
+  "QtCore.QCollator": {
+   "setLocale": 2
+  },
+  "QtCore.QEasingCurve": {
+   "swap": 0
+  },
+  "QtCore.QJsonArray": {
+   "append": 1,
+   "contains": 1,
+   "insert": 22,
+   "prepend": 1,
+   "push_back": 1,
+   "push_front": 1,
+   "replace": 22
+  },
+  "QtCore.QLocale": {
+   "setDefault": 3
+  },
+  "QtCore.QPropertyAnimation": {
+   "setEasingCurve": 0
+  },
+  "QtCore.QResource": {
+   "setLocale": 2
+  },
+  "QtCore.QTextStream": {
+   "setLocale": 2
+  },
+  "QtCore.QTimeLine": {
+   "setEasingCurve": 0
+  },
+  "QtCore.QTimeZone": {
+   "displayName": 37
+  },
+  "QtCore.QTranslator": {
+   "load": 36
+  },
+  "QtCore.QVariantAnimation": {
+   "setEasingCurve": 0
+  },
+  "QtGui.QAbstractButton": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8,
+   "setShortcut": 11
+  },
+  "QtGui.QAbstractGraphicsShapeItem": {
+   "setBrush": 4,
+   "setCursor": 5,
+   "setPen": 10
+  },
+  "QtGui.QAbstractItemView": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QAbstractScrollArea": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QAbstractSlider": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QAbstractSpinBox": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QAction": {
+   "setShortcut": 11
+  },
+  "QtGui.QApplication": {
+   "changeOverrideCursor": 6,
+   "setOverrideCursor": 6,
+   "setPalette": 17
+  },
+  "QtGui.QBitmap": {
+   "createMaskFromColor": 16,
+   "fill": 7
+  },
+  "QtGui.QBrush": {
+   "swap": 4
+  },
+  "QtGui.QCalendarWidget": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QCheckBox": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8,
+   "setShortcut": 11
+  },
+  "QtGui.QColorDialog": {
+   "getColor": 20,
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCurrentColor": 7,
+   "setCursor": 5,
+   "setCustomColor": 28,
+   "setLocale": 2,
+   "setPalette": 8,
+   "setStandardColor": 28
+  },
+  "QtGui.QColumnView": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QComboBox": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QCommandLinkButton": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8,
+   "setShortcut": 11
+  },
+  "QtGui.QCommonStyle": {
+   "drawItemText": 43,
+   "polish": 8
+  },
+  "QtGui.QConicalGradient": {
+   "setColorAt": 27
+  },
+  "QtGui.QDateEdit": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QDateTimeEdit": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QDesktopWidget": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QDial": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QDialog": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QDialogButtonBox": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QDockWidget": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QDoubleSpinBox": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QDoubleValidator": {
+   "setLocale": 2
+  },
+  "QtGui.QErrorMessage": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QFileDialog": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QFocusFrame": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QFontComboBox": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QFontDialog": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QFrame": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QGradient": {
+   "setColorAt": 27
+  },
+  "QtGui.QGraphicsColorizeEffect": {
+   "setColor": 7
+  },
+  "QtGui.QGraphicsDropShadowEffect": {
+   "setColor": 7
+  },
+  "QtGui.QGraphicsEllipseItem": {
+   "setBrush": 4,
+   "setCursor": 5,
+   "setPen": 10
+  },
+  "QtGui.QGraphicsItem": {
+   "setCursor": 5
+  },
+  "QtGui.QGraphicsItemGroup": {
+   "setCursor": 5
+  },
+  "QtGui.QGraphicsLineItem": {
+   "setCursor": 5,
+   "setPen": 10
+  },
+  "QtGui.QGraphicsObject": {
+   "setCursor": 5
+  },
+  "QtGui.QGraphicsOpacityEffect": {
+   "setOpacityMask": 4
+  },
+  "QtGui.QGraphicsPathItem": {
+   "setBrush": 4,
+   "setCursor": 5,
+   "setPen": 10
+  },
+  "QtGui.QGraphicsPixmapItem": {
+   "setCursor": 5
+  },
+  "QtGui.QGraphicsPolygonItem": {
+   "setBrush": 4,
+   "setCursor": 5,
+   "setPen": 10
+  },
+  "QtGui.QGraphicsProxyWidget": {
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setPalette": 8
+  },
+  "QtGui.QGraphicsRectItem": {
+   "setBrush": 4,
+   "setCursor": 5,
+   "setPen": 10
+  },
+  "QtGui.QGraphicsScene": {
+   "addEllipse": 33,
+   "addLine": 29,
+   "addPath": 34,
+   "addPolygon": 34,
+   "addRect": 33,
+   "setBackgroundBrush": 4,
+   "setForegroundBrush": 4,
+   "setPalette": 8
+  },
+  "QtGui.QGraphicsSimpleTextItem": {
+   "setBrush": 4,
+   "setCursor": 5,
+   "setPen": 10
+  },
+  "QtGui.QGraphicsTextItem": {
+   "setCursor": 5,
+   "setDefaultTextColor": 7
+  },
+  "QtGui.QGraphicsView": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setBackgroundBrush": 4,
+   "setCursor": 5,
+   "setForegroundBrush": 4,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QGraphicsWidget": {
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setPalette": 8
+  },
+  "QtGui.QGroupBox": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QGuiApplication": {
+   "changeOverrideCursor": 6,
+   "setOverrideCursor": 6,
+   "setPalette": 9
+  },
+  "QtGui.QHeaderView": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QImage": {
+   "setPixelColor": 26
+  },
+  "QtGui.QImageReader": {
+   "setBackgroundColor": 7
+  },
+  "QtGui.QInputDialog": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QIntValidator": {
+   "setLocale": 2
+  },
+  "QtGui.QKeySequence": {
+   "matches": 11,
+   "swap": 11
+  },
+  "QtGui.QKeySequenceEdit": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setKeySequence": 11,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QLCDNumber": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QLabel": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QLineEdit": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QLinearGradient": {
+   "setColorAt": 27
+  },
+  "QtGui.QListView": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QListWidget": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QListWidgetItem": {
+   "setBackground": 4,
+   "setForeground": 4
+  },
+  "QtGui.QMainWindow": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QMdiArea": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setBackground": 4,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QMdiSubWindow": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QMenu": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QMenuBar": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QMessageBox": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QMovie": {
+   "setBackgroundColor": 7
+  },
+  "QtGui.QOpenGLTexture": {
+   "setBorderColor": 7
+  },
+  "QtGui.QOpenGLWidget": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QOpenGLWindow": {
+   "setCursor": 5
+  },
+  "QtGui.QPaintDeviceWindow": {
+   "setCursor": 5
+  },
+  "QtGui.QPainter": {
+   "fillPath": 25,
+   "setBackground": 4,
+   "strokePath": 30
+  },
+  "QtGui.QPalette": {
+   "isCopyOf": 8,
+   "setBrush": 24,
+   "setColor": 26,
+   "setColorGroup": 21,
+   "swap": 8
+  },
+  "QtGui.QPen": {
+   "setBrush": 4,
+   "setColor": 7,
+   "swap": 10
+  },
+  "QtGui.QPixmap": {
+   "createMaskFromColor": 16,
+   "fill": 7
+  },
+  "QtGui.QPlainTextEdit": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QProgressBar": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QProgressDialog": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QProxyStyle": {
+   "drawItemText": 43,
+   "polish": 8
+  },
+  "QtGui.QPushButton": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8,
+   "setShortcut": 11
+  },
+  "QtGui.QRadialGradient": {
+   "setColorAt": 27
+  },
+  "QtGui.QRadioButton": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8,
+   "setShortcut": 11
+  },
+  "QtGui.QRasterWindow": {
+   "setCursor": 5
+  },
+  "QtGui.QRegExpValidator": {
+   "setLocale": 2
+  },
+  "QtGui.QRegularExpressionValidator": {
+   "setLocale": 2
+  },
+  "QtGui.QRubberBand": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QScrollArea": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QScrollBar": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QShortcut": {
+   "setKey": 11
+  },
+  "QtGui.QSizeGrip": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QSlider": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QSpinBox": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QSplashScreen": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8,
+   "showMessage": 38
+  },
+  "QtGui.QSplitter": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QSplitterHandle": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QStackedWidget": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QStandardItem": {
+   "setBackground": 4,
+   "setForeground": 4
+  },
+  "QtGui.QStatusBar": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QStyle": {
+   "drawItemText": 43,
+   "polish": 8
+  },
+  "QtGui.QStylePainter": {
+   "drawItemText": 42,
+   "fillPath": 25,
+   "setBackground": 4,
+   "strokePath": 30
+  },
+  "QtGui.QStyledItemDelegate": {
+   "displayText": 23
+  },
+  "QtGui.QSyntaxHighlighter": {
+   "setFormat": 38
+  },
+  "QtGui.QTabBar": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8,
+   "setTabTextColor": 27
+  },
+  "QtGui.QTabWidget": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QTableView": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QTableWidget": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QTableWidgetItem": {
+   "setBackground": 4,
+   "setForeground": 4
+  },
+  "QtGui.QTextBlockFormat": {
+   "setBackground": 4,
+   "setForeground": 4
+  },
+  "QtGui.QTextBrowser": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8,
+   "setTextBackgroundColor": 7,
+   "setTextColor": 7
+  },
+  "QtGui.QTextCharFormat": {
+   "setBackground": 4,
+   "setForeground": 4,
+   "setTextOutline": 10,
+   "setUnderlineColor": 7
+  },
+  "QtGui.QTextEdit": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8,
+   "setTextBackgroundColor": 7,
+   "setTextColor": 7
+  },
+  "QtGui.QTextFormat": {
+   "setBackground": 4,
+   "setForeground": 4
+  },
+  "QtGui.QTextFrameFormat": {
+   "setBackground": 4,
+   "setBorderBrush": 4,
+   "setForeground": 4
+  },
+  "QtGui.QTextImageFormat": {
+   "setBackground": 4,
+   "setForeground": 4,
+   "setTextOutline": 10,
+   "setUnderlineColor": 7
+  },
+  "QtGui.QTextListFormat": {
+   "setBackground": 4,
+   "setForeground": 4
+  },
+  "QtGui.QTextTableCellFormat": {
+   "setBackground": 4,
+   "setForeground": 4,
+   "setTextOutline": 10,
+   "setUnderlineColor": 7
+  },
+  "QtGui.QTextTableFormat": {
+   "setBackground": 4,
+   "setBorderBrush": 4,
+   "setForeground": 4
+  },
+  "QtGui.QTimeEdit": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QToolBar": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QToolBox": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QToolButton": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8,
+   "setShortcut": 11
+  },
+  "QtGui.QToolTip": {
+   "setPalette": 9
+  },
+  "QtGui.QTreeView": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QTreeWidget": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QTreeWidgetItem": {
+   "setBackground": 25,
+   "setForeground": 25
+  },
+  "QtGui.QUndoView": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QValidator": {
+   "setLocale": 2
+  },
+  "QtGui.QWidget": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QWidgetAction": {
+   "setShortcut": 11
+  },
+  "QtGui.QWindow": {
+   "setCursor": 5
+  },
+  "QtGui.QWizard": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtGui.QWizardPage": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtNetwork.QAbstractSocket": {
+   "bind": 39,
+   "connectToHost": 35,
+   "setLocalAddress": 12,
+   "setPeerAddress": 12,
+   "setProxy": 13
+  },
+  "QtNetwork.QDnsLookup": {
+   "setNameserver": 12
+  },
+  "QtNetwork.QHostAddress": {
+   "isInSubnet": 31,
+   "swap": 12
+  },
+  "QtNetwork.QNetworkAccessManager": {
+   "setProxy": 13
+  },
+  "QtNetwork.QNetworkAddressEntry": {
+   "setBroadcast": 12,
+   "setIp": 12,
+   "setNetmask": 12
+  },
+  "QtNetwork.QNetworkProxy": {
+   "setApplicationProxy": 14,
+   "swap": 13
+  },
+  "QtNetwork.QSslError": {
+   "swap": 15
+  },
+  "QtNetwork.QSslSocket": {
+   "bind": 39,
+   "connectToHost": 35,
+   "setLocalAddress": 12,
+   "setPeerAddress": 12,
+   "setProxy": 13
+  },
+  "QtNetwork.QTcpServer": {
+   "listen": 19,
+   "setProxy": 13
+  },
+  "QtNetwork.QTcpSocket": {
+   "bind": 39,
+   "connectToHost": 35,
+   "setLocalAddress": 12,
+   "setPeerAddress": 12,
+   "setProxy": 13
+  },
+  "QtNetwork.QUdpSocket": {
+   "bind": 39,
+   "connectToHost": 35,
+   "joinMulticastGroup": 19,
+   "leaveMulticastGroup": 19,
+   "readDatagram": 41,
+   "setLocalAddress": 12,
+   "setPeerAddress": 12,
+   "setProxy": 13,
+   "writeDatagram": 40
+  },
+  "QtOpenGL.QGLContext": {
+   "colorIndex": 7
+  },
+  "QtOpenGL.QGLWidget": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "qglClearColor": 7,
+   "qglColor": 7,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtSvg.QGraphicsSvgItem": {
+   "setCursor": 5
+  },
+  "QtSvg.QSvgWidget": {
+   "grabMouse": 5,
+   "grabShortcut": 18,
+   "setCursor": 5,
+   "setLocale": 2,
+   "setPalette": 8
+  },
+  "QtXmlPatterns.QXmlQuery": {
+   "bindVariable": 32
+  }
+ },
+ "counts": {
+  "native_int_parameter": 0,
+  "native_missing": 16,
+  "native_signature_mismatch": 0,
+  "positions": 610,
+  "pyside_enum_or_int_overload": 18,
+  "pyside_numeric_overload": 2,
+  "shadow_entries": 0,
+  "value_classes": 13
+ },
+ "entries": [
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      1
+     ],
+     "conversions": {
+      "QtCore.QEasingCurve.Type": "QtCore.QEasingCurve"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      1
+     ],
+     "conversions": {
+      "QtCore.QJsonValue.Type": "QtCore.QJsonValue"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      1
+     ],
+     "conversions": {
+      "QtCore.QLocale.Language": "QtCore.QLocale"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      1
+     ],
+     "conversions": {
+      "QtCore.QLocale.Language": "QtCore.QLocale"
+     },
+     "index": 0
+    }
+   ],
+   "static": true
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      1
+     ],
+     "conversions": {
+      "QtCore.Qt.BrushStyle": "QtGui.QBrush",
+      "QtCore.Qt.GlobalColor": "QtGui.QBrush"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      1
+     ],
+     "conversions": {
+      "QtCore.Qt.CursorShape": "QtGui.QCursor"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      1
+     ],
+     "conversions": {
+      "QtCore.Qt.CursorShape": "QtGui.QCursor"
+     },
+     "index": 0
+    }
+   ],
+   "static": true
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      1
+     ],
+     "conversions": {
+      "QtCore.Qt.GlobalColor": "QtGui.QColor"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      1
+     ],
+     "conversions": {
+      "QtCore.Qt.GlobalColor": "QtGui.QPalette"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      1
+     ],
+     "conversions": {
+      "QtCore.Qt.GlobalColor": "QtGui.QPalette"
+     },
+     "index": 0
+    }
+   ],
+   "static": true
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      1
+     ],
+     "conversions": {
+      "QtCore.Qt.PenStyle": "QtGui.QPen"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      1
+     ],
+     "conversions": {
+      "QtGui.QKeySequence.StandardKey": "QtGui.QKeySequence"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      1
+     ],
+     "conversions": {
+      "QtNetwork.QHostAddress.SpecialAddress": "QtNetwork.QHostAddress"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      1
+     ],
+     "conversions": {
+      "QtNetwork.QNetworkProxy.ProxyType": "QtNetwork.QNetworkProxy"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      1
+     ],
+     "conversions": {
+      "QtNetwork.QNetworkProxy.ProxyType": "QtNetwork.QNetworkProxy"
+     },
+     "index": 0
+    }
+   ],
+   "static": true
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      1
+     ],
+     "conversions": {
+      "QtNetwork.QSslError.SslError": "QtNetwork.QSslError"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      2
+     ],
+     "conversions": {
+      "QtCore.Qt.GlobalColor": "QtGui.QColor"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      2
+     ],
+     "conversions": {
+      "QtCore.Qt.GlobalColor": "QtGui.QPalette"
+     },
+     "index": 0
+    }
+   ],
+   "static": true
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      2
+     ],
+     "conversions": {
+      "QtGui.QKeySequence.StandardKey": "QtGui.QKeySequence"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      2
+     ],
+     "conversions": {
+      "QtNetwork.QHostAddress.SpecialAddress": "QtNetwork.QHostAddress"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      1,
+      4
+     ],
+     "conversions": {
+      "QtCore.Qt.GlobalColor": "QtGui.QColor"
+     },
+     "index": 0
+    }
+   ],
+   "static": true
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      10,
+      10
+     ],
+     "conversions": {
+      "QtCore.Qt.BrushStyle": "QtGui.QBrush",
+      "QtCore.Qt.GlobalColor": "QtGui.QBrush"
+     },
+     "index": 1
+    },
+    {
+     "arities": [
+      10,
+      10
+     ],
+     "conversions": {
+      "QtCore.Qt.BrushStyle": "QtGui.QBrush",
+      "QtCore.Qt.GlobalColor": "QtGui.QBrush"
+     },
+     "index": 2
+    },
+    {
+     "arities": [
+      10,
+      10
+     ],
+     "conversions": {
+      "QtCore.Qt.BrushStyle": "QtGui.QBrush",
+      "QtCore.Qt.GlobalColor": "QtGui.QBrush"
+     },
+     "index": 3
+    },
+    {
+     "arities": [
+      10,
+      10
+     ],
+     "conversions": {
+      "QtCore.Qt.BrushStyle": "QtGui.QBrush",
+      "QtCore.Qt.GlobalColor": "QtGui.QBrush"
+     },
+     "index": 4
+    },
+    {
+     "arities": [
+      10,
+      10
+     ],
+     "conversions": {
+      "QtCore.Qt.BrushStyle": "QtGui.QBrush",
+      "QtCore.Qt.GlobalColor": "QtGui.QBrush"
+     },
+     "index": 5
+    },
+    {
+     "arities": [
+      10,
+      10
+     ],
+     "conversions": {
+      "QtCore.Qt.BrushStyle": "QtGui.QBrush",
+      "QtCore.Qt.GlobalColor": "QtGui.QBrush"
+     },
+     "index": 6
+    },
+    {
+     "arities": [
+      10,
+      10
+     ],
+     "conversions": {
+      "QtCore.Qt.BrushStyle": "QtGui.QBrush",
+      "QtCore.Qt.GlobalColor": "QtGui.QBrush"
+     },
+     "index": 7
+    },
+    {
+     "arities": [
+      10,
+      10
+     ],
+     "conversions": {
+      "QtCore.Qt.BrushStyle": "QtGui.QBrush",
+      "QtCore.Qt.GlobalColor": "QtGui.QBrush"
+     },
+     "index": 8
+    },
+    {
+     "arities": [
+      10,
+      10
+     ],
+     "conversions": {
+      "QtCore.Qt.BrushStyle": "QtGui.QBrush",
+      "QtCore.Qt.GlobalColor": "QtGui.QBrush"
+     },
+     "index": 9
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      2,
+      2
+     ],
+     "conversions": {
+      "QtCore.QJsonValue.Type": "QtCore.QJsonValue"
+     },
+     "index": 1
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      2,
+      2
+     ],
+     "conversions": {
+      "QtCore.QLocale.Language": "QtCore.QLocale"
+     },
+     "index": 1
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      2,
+      2
+     ],
+     "conversions": {
+      "QtCore.Qt.BrushStyle": "QtGui.QBrush",
+      "QtCore.Qt.GlobalColor": "QtGui.QBrush"
+     },
+     "index": 1
+    },
+    {
+     "arities": [
+      3,
+      3
+     ],
+     "conversions": {
+      "QtCore.Qt.BrushStyle": "QtGui.QBrush",
+      "QtCore.Qt.GlobalColor": "QtGui.QBrush"
+     },
+     "index": 2
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      2,
+      2
+     ],
+     "conversions": {
+      "QtCore.Qt.BrushStyle": "QtGui.QBrush",
+      "QtCore.Qt.GlobalColor": "QtGui.QBrush"
+     },
+     "index": 1
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      2,
+      2
+     ],
+     "conversions": {
+      "QtCore.Qt.GlobalColor": "QtGui.QColor"
+     },
+     "index": 1
+    },
+    {
+     "arities": [
+      3,
+      3
+     ],
+     "conversions": {
+      "QtCore.Qt.GlobalColor": "QtGui.QColor"
+     },
+     "index": 2
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      2,
+      2
+     ],
+     "conversions": {
+      "QtCore.Qt.GlobalColor": "QtGui.QColor"
+     },
+     "index": 1
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      2,
+      2
+     ],
+     "conversions": {
+      "QtCore.Qt.GlobalColor": "QtGui.QColor"
+     },
+     "index": 1
+    }
+   ],
+   "static": true
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      2,
+      2
+     ],
+     "conversions": {
+      "QtCore.Qt.PenStyle": "QtGui.QPen"
+     },
+     "index": 1
+    },
+    {
+     "arities": [
+      5,
+      5
+     ],
+     "conversions": {
+      "QtCore.Qt.PenStyle": "QtGui.QPen"
+     },
+     "index": 4
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      2,
+      2
+     ],
+     "conversions": {
+      "QtCore.Qt.PenStyle": "QtGui.QPen"
+     },
+     "index": 1
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      2,
+      2
+     ],
+     "conversions": {
+      "QtNetwork.QHostAddress.SpecialAddress": "QtNetwork.QHostAddress"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      2,
+      2
+     ],
+     "conversions": {
+      "QtXmlPatterns.QXmlQuery.QueryLanguage": "QtXmlPatterns.QXmlQuery"
+     },
+     "index": 1
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      2,
+      3
+     ],
+     "conversions": {
+      "QtCore.Qt.PenStyle": "QtGui.QPen"
+     },
+     "index": 1
+    },
+    {
+     "arities": [
+      3,
+      3
+     ],
+     "conversions": {
+      "QtCore.Qt.BrushStyle": "QtGui.QBrush",
+      "QtCore.Qt.GlobalColor": "QtGui.QBrush"
+     },
+     "index": 2
+    },
+    {
+     "arities": [
+      5,
+      6
+     ],
+     "conversions": {
+      "QtCore.Qt.PenStyle": "QtGui.QPen"
+     },
+     "index": 4
+    },
+    {
+     "arities": [
+      6,
+      6
+     ],
+     "conversions": {
+      "QtCore.Qt.BrushStyle": "QtGui.QBrush",
+      "QtCore.Qt.GlobalColor": "QtGui.QBrush"
+     },
+     "index": 5
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      2,
+      3
+     ],
+     "conversions": {
+      "QtCore.Qt.PenStyle": "QtGui.QPen"
+     },
+     "index": 1
+    },
+    {
+     "arities": [
+      3,
+      3
+     ],
+     "conversions": {
+      "QtCore.Qt.BrushStyle": "QtGui.QBrush",
+      "QtCore.Qt.GlobalColor": "QtGui.QBrush"
+     },
+     "index": 2
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      2,
+      3
+     ],
+     "conversions": {
+      "QtNetwork.QHostAddress.SpecialAddress": "QtNetwork.QHostAddress"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      2,
+      5
+     ],
+     "conversions": {
+      "QtCore.QLocale.Language": "QtCore.QLocale"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      3,
+      3
+     ],
+     "conversions": {
+      "QtCore.QLocale.Language": "QtCore.QLocale"
+     },
+     "index": 2
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      3,
+      3
+     ],
+     "conversions": {
+      "QtCore.Qt.GlobalColor": "QtGui.QColor"
+     },
+     "index": 2
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      3,
+      3
+     ],
+     "conversions": {
+      "QtNetwork.QHostAddress.SpecialAddress": "QtNetwork.QHostAddress"
+     },
+     "index": 0
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      3,
+      3
+     ],
+     "conversions": {
+      "QtNetwork.QHostAddress.SpecialAddress": "QtNetwork.QHostAddress"
+     },
+     "index": 1
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      3,
+      3
+     ],
+     "conversions": {
+      "QtNetwork.QHostAddress.SpecialAddress": "QtNetwork.QHostAddress"
+     },
+     "index": 2
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      5,
+      6
+     ],
+     "conversions": {
+      "QtCore.Qt.GlobalColor": "QtGui.QPalette"
+     },
+     "index": 2
+    }
+   ],
+   "static": false
+  },
+  {
+   "positions": [
+    {
+     "arities": [
+      6,
+      7
+     ],
+     "conversions": {
+      "QtCore.Qt.GlobalColor": "QtGui.QPalette"
+     },
+     "index": 3
+    }
+   ],
+   "static": false
+  }
+ ],
+ "inventory_sha256": "5cf93af269d8b166acf3b6d60c153547ea1039336d19829edd1b8216c9ea23ee",
+ "limitations": [
+  "Stubs omit C++ explicit; value types other than the EXPLICIT list are assumed to convert implicitly.",
+  "Native stubs record one Any-typed signature per method; PySide2's overload family stands in for the native set.",
+  "native_int_parameter and native_signature_mismatch cannot fire on the current native stubs: every measured position is Any-typed and present (both count 0); they guard future stubs only.",
+  "Exclusion is per call arity: a sibling overload excludes a position only at the arities it accepts; partial exclusions are keyed index@low-high.",
+  "Plain int and QFlags parameters are never converted; only enum types the inventory finds natively.",
+  "Constructors and module functions are not adapted; run_app resolves attribute calls only.",
+  "Entries repeat per routed subclass: native stubs record no Qt base chain, so isinstance cannot be assumed to follow it.",
+  "Derived from declarations; native acceptance is unverified until FontLab runs the checklist."
+ ],
+ "reasons": {
+  "native_int_parameter": "The recorded native signature types this position int.",
+  "native_missing": "The routed native class declares no method of this name.",
+  "native_signature_mismatch": "The recorded native signature has no parameter at this position.",
+  "pyside_enum_or_int_overload": "A PySide2 overload of the same call arity takes an enum or int here; PySide2 dispatches directly, and the native overload set may too.",
+  "pyside_numeric_overload": "A PySide2 overload of the same call arity takes float or a numeric sequence here; an int-like enum could dispatch to it."
+ },
+ "schema_version": 2,
+ "unsupported": {
+  "QtCore.QJsonValue": {
+   "swap": {
+    "0": "native_missing"
+   }
+  },
+  "QtCore.QLocale": {
+   "swap": {
+    "0": "native_missing"
+   }
+  },
+  "QtGui.QBrush": {
+   "setColor": {
+    "0": "pyside_enum_or_int_overload"
+   }
+  },
+  "QtGui.QCursor": {
+   "swap": {
+    "0": "native_missing"
+   }
+  },
+  "QtGui.QImage": {
+   "fill": {
+    "0": "pyside_enum_or_int_overload"
+   }
+  },
+  "QtGui.QOpenGLShaderProgram": {
+   "setAttributeValue": {
+    "1": "pyside_numeric_overload"
+   },
+   "setUniformValue": {
+    "1": "pyside_enum_or_int_overload"
+   }
+  },
+  "QtGui.QPainter": {
+   "fillRect": {
+    "1": "pyside_enum_or_int_overload",
+    "4": "pyside_enum_or_int_overload"
+   },
+   "setBrush": {
+    "0": "pyside_enum_or_int_overload"
+   },
+   "setPen": {
+    "0": "pyside_enum_or_int_overload"
+   }
+  },
+  "QtGui.QPalette": {
+   "resolve": {
+    "0": "pyside_enum_or_int_overload"
+   }
+  },
+  "QtGui.QTextTableCellFormat": {
+   "setBorderBrush": {
+    "0": "native_missing"
+   },
+   "setBottomBorderBrush": {
+    "0": "native_missing"
+   },
+   "setLeftBorderBrush": {
+    "0": "native_missing"
+   },
+   "setRightBorderBrush": {
+    "0": "native_missing"
+   },
+   "setTopBorderBrush": {
+    "0": "native_missing"
+   }
+  },
+  "QtNetwork.QAbstractSocket": {
+   "bind": {
+    "0@1-2": "pyside_enum_or_int_overload"
+   }
+  },
+  "QtNetwork.QHostAddress": {
+   "isEqual": {
+    "0": "native_missing"
+   }
+  },
+  "QtNetwork.QSslSocket": {
+   "bind": {
+    "0@1-2": "pyside_enum_or_int_overload"
+   }
+  },
+  "QtNetwork.QTcpSocket": {
+   "bind": {
+    "0@1-2": "pyside_enum_or_int_overload"
+   }
+  },
+  "QtNetwork.QUdpSocket": {
+   "bind": {
+    "0@1-2": "pyside_enum_or_int_overload"
+   }
+  },
+  "QtOpenGL.QGLColormap": {
+   "setEntry": {
+    "1": "pyside_enum_or_int_overload"
+   }
+  },
+  "QtOpenGL.QGLShaderProgram": {
+   "setAttributeValue": {
+    "1": "pyside_numeric_overload"
+   },
+   "setUniformValue": {
+    "1": "pyside_enum_or_int_overload"
+   }
+  },
+  "QtWidgets.QItemDelegate": {
+   "selectedPixmap": {
+    "1": "native_missing"
+   }
+  },
+  "QtWidgets.QListWidgetItem": {
+   "setBackgroundColor": {
+    "0": "native_missing"
+   },
+   "setTextColor": {
+    "0": "native_missing"
+   }
+  },
+  "QtWidgets.QStylePainter": {
+   "fillRect": {
+    "1": "pyside_enum_or_int_overload",
+    "4": "pyside_enum_or_int_overload"
+   },
+   "setBrush": {
+    "0": "pyside_enum_or_int_overload"
+   },
+   "setPen": {
+    "0": "pyside_enum_or_int_overload"
+   }
+  },
+  "QtWidgets.QTableWidgetItem": {
+   "setBackgroundColor": {
+    "0": "native_missing"
+   },
+   "setTextColor": {
+    "0": "native_missing"
+   }
+  },
+  "QtWidgets.QTreeWidgetItem": {
+   "setBackgroundColor": {
+    "1": "native_missing"
+   },
+   "setTextColor": {
+    "1": "native_missing"
+   }
+  }
+ },
+ "value_classes": {
+  "QtCore.QEasingCurve": [
+   "QtCore.QEasingCurve.Type"
+  ],
+  "QtCore.QJsonValue": [
+   "QtCore.QJsonValue.Type"
+  ],
+  "QtCore.QLocale": [
+   "QtCore.QLocale.Language"
+  ],
+  "QtGui.QBrush": [
+   "QtCore.Qt.BrushStyle",
+   "QtCore.Qt.GlobalColor"
+  ],
+  "QtGui.QColor": [
+   "QtCore.Qt.GlobalColor"
+  ],
+  "QtGui.QCursor": [
+   "QtCore.Qt.CursorShape"
+  ],
+  "QtGui.QKeySequence": [
+   "QtGui.QKeySequence.StandardKey"
+  ],
+  "QtGui.QPalette": [
+   "QtCore.Qt.GlobalColor"
+  ],
+  "QtGui.QPen": [
+   "QtCore.Qt.PenStyle"
+  ],
+  "QtNetwork.QHostAddress": [
+   "QtNetwork.QHostAddress.SpecialAddress"
+  ],
+  "QtNetwork.QNetworkProxy": [
+   "QtNetwork.QNetworkProxy.ProxyType"
+  ],
+  "QtNetwork.QSslError": [
+   "QtNetwork.QSslError.SslError"
+  ],
+  "QtXmlPatterns.QXmlQuery": [
+   "QtXmlPatterns.QXmlQuery.QueryLanguage"
+  ]
+ }
+}

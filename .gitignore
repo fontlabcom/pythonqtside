@@ -1,0 +1,13 @@
+.venv/
+.local/
+__pycache__/
+.pytest_cache/
+dist/
+uv.lock
+# Private and scratch state: macOS metadata, agent scratch dirs, local envs (never source)
+.DS_Store
+.omc/
+**/.omc/
+.superpowers/
+.worktrees/
+*.vfpyc

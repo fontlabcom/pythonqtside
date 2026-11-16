@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- this_file: examples/fixtures/uiloader/form.ui -->
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<ui version="4.0">
+ <class>GreetingForm</class>
+ <widget class="QWidget" name="GreetingForm">
+  <property name="windowTitle">
+   <string>Greeting</string>
+  </property>
+  <layout class="QVBoxLayout" name="layout">
+   <item>
+    <widget class="QLineEdit" name="nameEdit"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="okButton">
+     <property name="text">
+      <string>Greet</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="statusLabel">
+     <property name="text">
+      <string>Waiting</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+</ui>

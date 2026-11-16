@@ -1,0 +1,1141 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Pythonqtside: public contracts, installation and runtime boundaries.">
+      
+      
+      
+        <link rel="canonical" href="https://fontlabcom.github.io/pythonqtside/development-and-limits/">
+      
+      
+        <link rel="prev" href="../pythonqt-compatibility/">
+      
+      
+        <link rel="next" href="../licence/">
+      
+      
+        
+      
+      
+      
+      
+        
+        
+        
+          <link rel="icon" href="../assets/images/favicon.png">
+        
+      
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-materialx-10.1.8">
+    
+    
+      
+        <title>Development And Limits - Pythonqtside</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.314bbef5.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a45159b5.min.css">
+      
+    
+    
+
+    
+
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/local.css">
+    
+      <link rel="stylesheet" href="https://i.fontlab.com/fltheme26/1.0.0/components.css">
+    
+      <link rel="stylesheet" href="https://i.fontlab.com/fltheme26/1.0.0/theme.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <script src="https://i.fontlab.com/menu/fontlab.js" defer></script>
+
+  </head>
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" data-mx-topbar="glass">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="toc" type="checkbox" id="__toc" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <label class="md-overlay" for="__toc"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#development-and-limits" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+  <fontlab-menu mode="light" site-label="Pythonqtside"
+                site-url="https://fontlabcom.github.io/pythonqtside/"
+                mobile-menu="materialx" mobile-search="materialx"></fontlab-menu>
+  
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Pythonqtside" class="md-header__button md-logo" aria-label="Pythonqtside" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pythonqtside
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Development And Limits
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.25 2a8.25 8.25 0 0 1 6.34 13.53l5.69 5.69a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215l-5.69-5.69A8.25 8.25 0 1 1 10.25 2M3.5 10.25a6.75 6.75 0 1 0 13.5 0 6.75 6.75 0 0 0-13.5 0"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.25 2a8.25 8.25 0 0 1 6.34 13.53l5.69 5.69a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215l-5.69-5.69A8.25 8.25 0 1 1 10.25 2M3.5 10.25a6.75 6.75 0 1 0 13.5 0 6.75 6.75 0 0 0-13.5 0"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fontlabcom/pythonqtside" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fontlabcom/pythonqtside
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Pythonqtside" class="md-nav__button md-logo" aria-label="Pythonqtside" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Pythonqtside
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fontlabcom/pythonqtside" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fontlabcom/pythonqtside
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pythonqt-compatibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pythonqt Compatibility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development And Limits
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development And Limits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="#reproducible-inventory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reproducible inventory
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measured-adapters-phase-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Measured adapters (phase 3)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Measured adapters (phase 3)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implicit-enum-to-value-class-conversions-phase-3c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implicit enum to value-class conversions (phase 3c)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keyword-arguments-issue-104" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keyword arguments (issue 104)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signals-flags-and-buffers-issue-104" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Signals, flags and buffers (issue 104)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unchanged-app-fixtures-r036" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unchanged-app fixtures (R036)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-existing-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running existing applications
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-and-acceptance-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation and acceptance boundary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="#reproducible-inventory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reproducible inventory
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measured-adapters-phase-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Measured adapters (phase 3)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Measured adapters (phase 3)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implicit-enum-to-value-class-conversions-phase-3c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implicit enum to value-class conversions (phase 3c)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keyword-arguments-issue-104" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keyword arguments (issue 104)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signals-flags-and-buffers-issue-104" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Signals, flags and buffers (issue 104)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unchanged-app-fixtures-r036" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unchanged-app fixtures (R036)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-existing-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running existing applications
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-and-acceptance-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation and acceptance boundary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+  
+
+
+<h1 id="development-and-limits">Development and limits</h1>
+<h2 id="reproducible-inventory">Reproducible inventory</h2>
+<p><code>src/pythonqtside/_inventory.json</code> joins eight
+PySide2 module stubs with nine captured PythonQt stubs, including private and
+combined Qt. It records 648 class declarations, availability, member differences,
+constructor arities, enum differences and SHA256 identities for all 21 inputs.
+Regenerate it and <code>_qtwidgets.json</code> from the read-only sibling Echopy checkout:</p>
+<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>--no-sync<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span>pythonqtside.tooling.inventory<span class="w"> </span>--echopy<span class="w"> </span>../fontlab-echopy
+</code></pre></div>
+<p>The tool parses ASTs and ZIP members, verifies wheel/manifest and recorded native
+hashes, and emits sorted JSON without timestamps or local paths. It never loads
+the wheel. The report is 3,607,692 bytes. The widget list changed from 200 to 195:
+<code>Object</code> is an empty stub helper; <code>QAccessibleWidget</code>, <code>QColormap</code>,
+<code>QStyleOptionComplex</code> and <code>QTreeWidgetItemIterator</code> also have no native match.</p>
+<p>The supplied <code>_provenance.json</code> records no host versions: <code>fontlab_version</code>,
+<code>python_version</code> and <code>qt_version</code> are explicitly <code>null</code>. Nested native enum types
+are opaque; their membership remains unknown. Extra uppercase native attributes
+are labelled enum candidates, not confirmed values. Constructor shapes describe
+declarations, not working overloads. Inherited declarations within the eight
+families are included; getter/attribute matches still require native checks.
+Errors distinguish unavailable PySide2 names, names owned by another family and
+unknown names. Native verification remains the orchestrator's gate.</p>
+<h2 id="measured-adapters-phase-3">Measured adapters (phase 3)</h2>
+<p><code>python -m pythonqtside.tooling.differences</code> reads only <code>_inventory.json</code> and
+writes two deterministic files: the report
+<code>_differences.json</code> (241,816 bytes) and
+the small runtime table
+<code>_out_parameters.json</code> (9,916 bytes),
+which is the only file the out-parameter adapter loads. The report covers four categories for
+routed classes:</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Measured</th>
+<th>Adapter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PySide2 getter vs native attribute</td>
+<td>5,364 names, 228 classes; natively 4,624 measured, all Qt properties</td>
+<td>zero-arg getter, gated by <code>metaObject().indexOfProperty()</code></td>
+</tr>
+<tr>
+<td>Enum members absent natively</td>
+<td>2,679 names, 125 classes; 1,381 opaque nested enums</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Tuple results from out-parameters</td>
+<td>259 methods</td>
+<td>39: 2 by native predicate, 37 by <code>PythonQt.BoolResult</code></td>
+</tr>
+<tr>
+<td>Keyword arguments</td>
+<td>every native constructor and method rejects them (FontLab measurement)</td>
+<td><code>_keywords.json</code>: PySide2 names mapped to positions</td>
+</tr>
+</tbody>
+</table>
+<p>The getter row was measured in FontLab 9 (issue 104, workspace evidence
+<code>pqs-g04/getters/</code>): on 181 default-constructed classes, every one of the 4,624
+names is a Qt property of the instance, so the <code>indexOfProperty</code> gate covers all of
+them; none is already callable natively, none falls through. The other 740 names
+belong to 47 classes that were skipped (application, clipboard, printing, GL,
+platform dialogs) or have no default constructor; PythonQt exposes no
+<code>staticMetaObject</code> to inspect them without an instance. The gate checks the live
+instance at call time either way. Outside <code>run_app</code>, <code>compat.pyside_method(widget,
+"windowTitle")()</code> uses the same gate. The measurement never reads property values:
+reading <code>currentFrame</code> on an empty <code>QSvgRenderer</code> segfaults FontLab.</p>
+<p>An out-parameter method is adapted only when PySide2 returns <code>(value, bool)</code> and
+every native overload declares one bool out-parameter (<code>ok</code>, <code>invertible</code> or
+<code>timedOut</code>) at the same position.</p>
+<ul>
+<li>Predicate: <code>QTransform().inverted()</code> and <code>QMatrix().inverted()</code> return the
+  native result plus <code>isInvertible()</code>. A call with any argument stays native.</li>
+<li><code>BoolResult</code>: the adapter puts a native <code>PythonQt.BoolResult</code> in the
+  out-parameter slot, shifts later PySide2 arguments after it and returns
+  <code>(value, bool(result))</code>. Examples: <code>QLocale().toInt("42")</code> gives <code>(42, True)</code>,
+  <code>QByteArray.toInt(16)</code>, <code>QMatrix4x4().inverted()</code>, <code>item.itemTransform(other)</code>,
+  <code>QTcpServer.waitForNewConnection(msec)</code> (the flag is <code>timedOut</code>), and the static
+  <code>QInputDialog.getText/getInt/getDouble/getItem/getMultiLineText</code>. Static methods adapt on the class too. Parameters that
+  PySide2 lets a caller omit before the slot get Qt 5.15's declared defaults
+  (<code>getText</code> echo <code>QLineEdit.Normal</code>, looked up natively when called, and text
+  <code>""</code>).</li>
+<li>Keyword calls are first mapped to positions (see "Keyword arguments" below).
+  Calls stay native when keywords cannot be mapped, already pass a <code>BoolResult</code>,
+  pass more positional arguments than the PySide2 form allows (<code>getDouble</code>'s
+  <code>step</code> overload) or omit a parameter without a default.</li>
+<li>A PySide2-style call that passes <code>None</code> where PythonQt expects <code>ok</code> (for
+  example <code>getText(parent, title, label, echo, text, None)</code>) is read as PySide2:
+  the <code>BoolResult</code> goes into the slot and <code>None</code> follows it as <code>flags</code>. Only an
+  explicit <code>BoolResult</code> argument marks a call as PythonQt style.</li>
+</ul>
+<p>Unsupported methods keep native behavior, each with a recorded reason: 106 lack a
+native method, 112 return several values or no flag (<code>getRgb</code>,
+<code>QFileDialog.getOpenFileName</code>), 1 is ambiguous and 1 contradicts its stub.
+<code>QHostAddress.toIPv4Address</code> also has a same-arity PySide2 overload that returns
+a plain int. <code>QFontDialog.getFont</code> is annotated <code>(QFont, bool)</code>, but PySide2
+returns <code>(ok, font)</code> at runtime, and the native <code>(ok, parent)</code> overload is not in
+the stub, so it stays native.</p>
+<p>Behaviour change from phase 3: <code>QMatrix4x4().inverted()</code> now returns a tuple.</p>
+<h3 id="implicit-enum-to-value-class-conversions-phase-3c">Implicit enum to value-class conversions (phase 3c)</h3>
+<p>PySide2 converts an enum to a value type implicitly: <code>setEasingCurve(QEasingCurve.OutElastic)</code>
+calls <code>QEasingCurve(OutElastic)</code> first. FontLab's PythonQt does not: that call
+raises "wrong arguments: (30,)", and <code>QTcpServer().listen(QHostAddress.LocalHost, 0)</code>
+finds no overload. Passing <code>QEasingCurve(...)</code> or <code>QHostAddress(...)</code> works.</p>
+<p><code>python -m pythonqtside.tooling.conversions --echopy ../fontlab-echopy</code> writes
+<code>_implicit_conversions.json</code>
+(34,888 bytes). <code>_inventory.json</code> keeps parameter names but no annotations, so
+the command reads the PySide2 wheel stubs and native stubs that the inventory
+pins. It stops if any SHA256 differs from the inventory's <code>inputs</code>, and takes
+class routing and native enum layout from the inventory.</p>
+<ul>
+<li>A value class is a routed PySide2 class with a copy constructor (Shiboken
+  converts only to value types) and a constructor that takes one native enum.
+  Five Qt 5.15 types whose enum constructor is C++ <code>explicit</code> are left out
+  (QEvent, QOpenGLBuffer, QGLBuffer, QPageSize, QTileRules). That leaves 13:
+  QEasingCurve, QHostAddress, QColor, QBrush, QPen, QCursor, QKeySequence,
+  QPalette, QLocale, QJsonValue, QNetworkProxy, QSslError and QXmlQuery.</li>
+<li>A position is a parameter typed with one of those classes. Each routed class
+  gets its own entries, inherited methods included, because the native stubs
+  give every wrapper the base <code>PythonQtInstanceWrapper</code> and no Qt base chain, so
+  <code>isinstance(label, QWidget)</code> cannot be assumed. The table has 610 positions on
+  168 classes; each distinct entry is stored once. Examples:
+  <code>setEasingCurve</code> on QVariantAnimation, QPropertyAnimation and QTimeLine,
+  <code>QTcpServer.listen</code>, <code>setCursor</code> on every widget class, <code>QPixmap.fill</code>,
+  <code>setPalette</code> and the static <code>setOverrideCursor</code>.</li>
+<li>Exclusions are decided per call arity (phase 3d). A position is excluded at an
+  argument count when a PySide2 overload accepting that count takes an enum or
+  int there (18), or <code>float</code> or a numeric sequence that an int-like enum could
+  match (2: <code>QOpenGLShaderProgram</code>/<code>QGLShaderProgram.setAttributeValue</code>). In
+  those cases PySide2 does not convert and the native overload set may not
+  either: <code>QPainter.setBrush</code>, <code>setPen</code>, <code>fillRect</code>, <code>QImage.fill</code> and
+  <code>QBrush.setColor</code> stay native at every arity. A sibling with another arity
+  no longer blocks a position: <code>palette.setColor(QPalette.Window, Qt.red)</code> and
+  <code>palette.setBrush(role, Qt.red)</code> convert, and so do
+  <code>QImage.setPixelColor(point, Qt.red)</code>, <code>QOpenGLTexture.setBorderColor(Qt.red)</code>
+  and the 3-argument <code>socket.bind(QHostAddress.LocalHost, port, mode)</code>. The
+  3-argument <code>setColor(group, role, colour)</code> still has no position at index 1.
+  Another 16 positions have no native method. Each exclusion is recorded with
+  its reason, keyed <code>"index"</code> or, when only some arities are excluded,
+  <code>"index@low-high"</code>. If the native classes do form a chain,
+  a class without a conversion whose base has one gets an empty entry that
+  shadows the base, and the most-derived match wins. There are none today.</li>
+<li>Generation fails if a method appears in both this table and
+  <code>_out_parameters.json</code>.</li>
+</ul>
+<p>At call time the argument is wrapped as <code>V(value)</code> only when all of these hold:
+the receiver is native, the selected method is native, the arguments are
+positional (after keyword mapping), their count is within the measured range, and the value is an
+instance of the measured native enum type. A plain <code>int</code> or <code>bool</code>, another enum
+type and a ready-made value object pass through unchanged. If the native enum
+type cannot be resolved, nothing is wrapped. When a method has several entries
+for one index, the actual positional argument count selects the entry. Native
+class and enum objects are resolved once per path and <code>PythonQt</code> module, so a
+<code>setCursor</code> lookup does not repeat its ~95 <code>getattr</code> chains on every call. Static methods are converted on
+class receivers too (<code>QApplication.setOverrideCursor(Qt.WaitCursor)</code>). The native
+call happens once and its result is returned unchanged. Constructors and module
+functions are not converted (<code>QPen(Qt.red)</code> stays native), and neither are
+unbound instance-method calls (see below).</p>
+<p><code>run_app</code> sources get every adapter automatically. New code opts in explicitly:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pythonqtside</span><span class="w"> </span><span class="kn">import</span> <span class="n">compat</span>
+<span class="n">title</span> <span class="o">=</span> <span class="n">compat</span><span class="o">.</span><span class="n">pyside_method</span><span class="p">(</span><span class="n">widget</span><span class="p">,</span> <span class="s2">"windowTitle"</span><span class="p">)()</span>
+<span class="n">inverse</span><span class="p">,</span> <span class="n">ok</span> <span class="o">=</span> <span class="n">compat</span><span class="o">.</span><span class="n">pyside_method</span><span class="p">(</span><span class="n">transform</span><span class="p">,</span> <span class="s2">"inverted"</span><span class="p">)()</span>
+<span class="n">text</span><span class="p">,</span> <span class="n">ok</span> <span class="o">=</span> <span class="n">compat</span><span class="o">.</span><span class="n">pyside_method</span><span class="p">(</span><span class="n">QInputDialog</span><span class="p">,</span> <span class="s2">"getText"</span><span class="p">)(</span><span class="n">parent</span><span class="p">,</span> <span class="s2">"Title"</span><span class="p">,</span> <span class="s2">"Name"</span><span class="p">)</span>
+<span class="n">compat</span><span class="o">.</span><span class="n">pyside_method</span><span class="p">(</span><span class="n">animation</span><span class="p">,</span> <span class="s2">"setEasingCurve"</span><span class="p">)(</span><span class="n">QEasingCurve</span><span class="o">.</span><span class="n">OutElastic</span><span class="p">)</span>
+<span class="n">label</span> <span class="o">=</span> <span class="n">compat</span><span class="o">.</span><span class="n">pyside_construct</span><span class="p">(</span><span class="n">QLabel</span><span class="p">,</span> <span class="s2">"Name"</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="n">window</span><span class="p">)</span>
+</code></pre></div>
+<p>Attribute reads such as <code>widget.windowTitle</code> remain native values. Classes are
+not patched. A Python override keeps its own behaviour. Within <code>run_app</code>, bound
+native methods stored first and called later get the full adapter chain, with or
+without keywords (<code>convert = locale.toInt; convert("42")</code> returns <code>(42, True)</code>).
+Native <code>super()</code> calls get the same adapters, including when native lookup needs
+the explicit base-method fallback; Python base methods keep their own behaviour.
+Unbound instance-method calls such as <code>QTransform.inverted(t)</code> or
+<code>QLocale.toInt(locale, s)</code> remain native and return PythonQt's single value.</p>
+<h3 id="keyword-arguments-issue-104">Keyword arguments (issue 104)</h3>
+<p>FontLab's PythonQt rejects every keyword argument to a native constructor or
+method: <code>QLabel("Name", parent=window)</code> raises <code>ValueError: ... called slot does
+not support kwargs</code> (measured on QWidget, QLabel, QPushButton, QDialog, QTimer,
+QLineEdit, QVBoxLayout, QColor, QSize, <code>setText</code>, <code>resize</code>, <code>setProperty</code> and the
+static <code>QColor.fromRgb</code>; workspace evidence <code>pqs-g04/probe_keywords.json</code>).</p>
+<p><code>python -m pythonqtside.tooling.keywords --echopy ../fontlab-echopy</code> writes
+<code>_keywords.json</code> (805,916 bytes) from the
+pinned PySide2 and native stubs, verified against the inventory's SHA256 inputs.
+It lists the PySide2 parameter names of every constructor and method overload of
+the 535 routed classes, and 450 gap defaults: Qt 5.15 declaration defaults quoted
+in Echopy's native docstrings when they are <code>nullptr</code>, <code>QString()</code>, <code>true</code>/<code>false</code>,
+a number or <code>Class::Member</code> of a routed class, plus the BoolResult adapter's
+defaults. 220 tuple-returning methods are left out of the keyword table (the three QFileDialog pickers are adapted separately, see <code>src_docs/md/pythonqt-compatibility.md</code>) because PySide2 drops their
+out-parameters, so its positions differ from the native ones
+(<code>QFileDialog.getSaveFileName</code>'s <code>options</code> is native position 5, not 4); the 39
+adapted ones stay.</p>
+<p>A keyword call becomes positional when exactly one positional form fits. A
+skipped parameter needs a recorded default; <code>{"native": ...}</code> defaults resolve at
+call time. Distinct forms, a keyword naming a parameter already passed by
+position, or an unresolvable default keep the native call and its native error.
+Constructor keywords that name no parameter set a Qt property or connect a
+signal after construction, as PySide2 does (<code>QTimer(interval=50)</code>,
+<code>QPushButton("OK", clicked=accept)</code>); other names raise <code>AttributeError</code>. Inside
+<code>run_app</code> these connections are tracked and disconnected by <code>close()</code>.</p>
+<p>Covered call forms: native constructors and Python subclasses without their own
+<code>__init__</code>, <code>super().__init__(parent=parent)</code>, <code>Base.__init__(self, parent=p)</code>,
+instance and static methods, <code>super().method(...)</code> (also when PythonQt's <code>super()</code>
+misses the native method; a <code>base = super().method</code> load reaches the native base),
+and a native method stored first and called later with keywords. Mapped calls then pass through the out-parameter and
+conversion adapters, so <code>QLocale().toInt(s="42")</code> returns <code>(42, True)</code>. Signal
+<code>connect</code>/<code>disconnect</code>/<code>emit</code> are never wrapped. In <code>run_app</code> only call sites
+that pass keywords consult the table, which loads on the first such call.
+Outside <code>run_app</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pythonqtside</span><span class="w"> </span><span class="kn">import</span> <span class="n">compat</span>
+<span class="n">label</span> <span class="o">=</span> <span class="n">compat</span><span class="o">.</span><span class="n">pyside_construct</span><span class="p">(</span><span class="n">QLabel</span><span class="p">,</span> <span class="s2">"Name"</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="n">window</span><span class="p">)</span>
+<span class="n">compat</span><span class="o">.</span><span class="n">pyside_method</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="s2">"resize"</span><span class="p">)(</span><span class="n">w</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="n">h</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+</code></pre></div>
+<p>Native acceptance (FontLab 9.0.9780, <code>pqs-g04/keywords/</code>, re-run on the final
+code in <code>pqs-g04/regression/final/keywords.json</code>): an unchanged app
+with all of the forms above, including <code>QLabel(alignment=Qt.AlignCenter)</code>,
+<code>QLineEdit(placeholderText=...)</code>, <code>QTimer(interval=50, singleShot=True)</code> and
+<code>QColor.fromRgb(r=10, g=20, b=30)</code> (alpha from the Qt default), ran and closed
+with no cleanup errors.</p>
+<h3 id="signals-flags-and-buffers-issue-104">Signals, flags and buffers (issue 104)</h3>
+<p>Measured in FontLab 9 (workspace evidence <code>pqs-g04/fixtures/</code>); <code>run_app</code> adapts
+each one:</p>
+<ul>
+<li><strong>Native-slot connections.</strong> PythonQt passes every signal argument to a native
+  slot, so <code>button.clicked.connect(label.clear)</code> fails ("wrong number of
+  arguments"); Qt drops trailing arguments. Worse, PythonQt's slot comparison casts
+  both operands to slot objects: disconnecting anything from a receiver that holds
+  both a native slot (<code>buttons.rejected.connect(self.reject)</code>) and a bound method of
+  the same object (<code>buttons.accepted.connect(self.submit)</code>) segfaults FontLab.
+  <code>run_app</code> connects native slots through a Python forwarder that retries with fewer
+  leading arguments, maps a later <code>disconnect(self.reject)</code> to that forwarder, and
+  never lets a native slot be compared with another type.</li>
+<li><strong>Signal overloads.</strong> <code>process.finished</code> connects to the deprecated
+  <code>finished(int)</code>, so a PySide2 <code>lambda code, status: ...</code> never runs. When a
+  callback needs more positional arguments than PythonQt's default overload
+  delivers, <code>run_app</code> connects it with <code>owner.connect("2finished(int,QProcess::ExitStatus)", cb)</code>
+  (overloads come from <code>signal.parameterTypes()</code>) and undoes that on disconnect.</li>
+<li><strong>QFlags against enum overloads.</strong> <code>QDialogButtonBox.Ok | QDialogButtonBox.Cancel</code>
+  is a plain int, and <code>QDialogButtonBox(int)</code> picks the <code>Qt.Orientation</code> overload:
+  no buttons. <code>python -m pythonqtside.tooling.flags --echopy ../fontlab-echopy</code>
+  writes <code>_flags.json</code> (12 positions on 10 methods,
+  e.g. the QDialogButtonBox constructor and <code>QMessageBox.question</code>), where a flags
+  parameter competes with an enum overload of the same arity. There a plain int, or
+  an enum value other than the competing enum, is wrapped in the native flags class.</li>
+<li><strong><code>bytes(QByteArray)</code></strong> raises in PythonQt; <code>bytes</code>, <code>bytearray</code> and <code>memoryview</code>
+  calls in <code>run_app</code> read a native QByteArray through <code>data()</code>.</li>
+<li><strong>Ownership.</strong> Widgets returned by <code>QUiLoader.load()</code> are owned like constructor
+  results (Qt gives the caller ownership). Owned objects Qt already deleted (a
+  delegate's editor) are skipped at close: PythonQt wrappers of deleted QObjects
+  raise <code>ValueError: Trying to call ... on a destroyed ... object</code> instead of
+  crashing. A killed QProcess counts as stopped when its state is NotRunning
+  (<code>waitForFinished</code> returns false after <code>errorOccurred(Crashed)</code>).</li>
+</ul>
+<h2 id="unchanged-app-fixtures-r036">Unchanged-app fixtures (R036)</h2>
+<p><code>examples/fixtures/</code> holds seven owned PySide2 apps: a form, custom
+signals/slots/properties with an event filter and virtual overrides, a table model
+with an editable spin-box delegate, a Designer <code>.ui</code> form loaded by QUiLoader,
+QPainter driven by mouse and key events, QTimer with QProcess success/error/cancel,
+and a delete-on-close child dialog reopened. Run them in FontLab:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>../fontlab-remopy
+uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>../pythonqtside/examples/fixtures/run_native.py<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--pythonqtside<span class="w"> </span>../pythonqtside/src<span class="w"> </span>--echopy<span class="w"> </span>../fontlab-echopy/src
+</code></pre></div>
+<p>Each stage is one short <code>run_python</code> call; waits happen on the host side so
+FontLab's event loop delivers process output, queued delegate commits and deferred
+deletion. The command prints a JSON report and exits 1 if any check fails.</p>
+<p>The owned-font fixture (<code>font_edit/</code>, driver <code>run_native_font.py</code>, mutating) also
+passes: an unchanged PySide2 panel sets <code>.notdef</code>'s advance width in a font FontLab
+created for the run; Edit &gt; Undo and Redo, <code>save_font</code>, an independent VFJ parse and
+reopen all agree (evidence <code>pqs-g04/font-edit/receipt.json</code>). <code>fontlab.CurrentGlyph()</code>
+is <code>None</code> without a glyph window, so the panel uses the workspace's current package.</p>
+<p>All seven run unchanged in FontLab 9.0.9780 (evidence <code>pqs-g04/fixtures/run7-all.json</code>).
+None needed a source change; the adapters above came from them: the form needed
+the QFlags and native-slot fixes, the timer the overload, <code>bytes</code> and QProcess-stop
+fixes, the <code>.ui</code> form the <code>load()</code> ownership, the model/view the destroyed-object
+skip. Each fixture's files are hashed before and after the run.</p>
+<p>Lifetime, measured (R035, <code>pqs-g04/lifetime/</code> and the fixtures): deleting a parent
+deletes its children; <code>deleteLater()</code> completes only after control returns to the
+event loop, not within the same <code>run_python</code> call; a wrapper of a deleted object
+raises <code>ValueError: Trying to call 'setText' on a destroyed QLabel object</code> (there
+is no <code>QtCore.QPointer</code>; this check is the validity test). After <code>handle.close()</code>
+an emission from a still-living object reaches no app callback, owned objects are
+gone by the next call, timers stop and processes are killed. App code that still
+runs after close (a Python object the host kept) raises <code>RuntimeError: The
+embedded application handle is closed</code> at its first adapted call, or <code>NameError</code>
+when it first reads a module global, because close releases the app's globals.</p>
+<h2 id="running-existing-applications">Running existing applications</h2>
+<p>Run an ordinary PySide2 script without editing its imports inside FontLab:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pythonqtside</span><span class="w"> </span><span class="kn">import</span> <span class="n">run_app</span>
+<span class="n">handle</span> <span class="o">=</span> <span class="n">run_app</span><span class="p">(</span><span class="s2">"/path/to/app.py"</span><span class="p">)</span>
+<span class="c1"># The host event loop remains in control; the handle retains widgets and imports.</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># Idempotent, scoped to constructor-created objects from this app.</span>
+</code></pre></div>
+<p><code>run_app(path, parent=None)</code> uses a private import graph for ordinary PySide2
+imports and local <code>.py</code> files/packages, including imports from later callbacks.
+Original files remain byte-identical. <code>handle.reports</code> contains immutable original
+bytes, SHA256, filename, encoding and adapted call locations; <code>identity_report</code>
+records routed classes and the explicit application proxy. Reports survive close.
+The package retains active handles even when the caller discards the return value.</p>
+<p>Native class identities remain intact except QApplication/QCoreApplication and
+available QGuiApplication: these use one explicit proxy whose <code>native_application</code>
+is the existing FontLab application. <code>instance()</code> reuses that proxy; application
+<code>exec()</code>/<code>exec_()</code> return zero. <code>quit()</code>, <code>exit()</code> and <code>closeAllWindows()</code> close only
+this handle. Application subclasses and other application operations/settings
+raise <code>NotImplementedError</code>. Native dialog <code>exec_()</code> keeps its real modality.</p>
+<p>Callable getter adaptation requires <code>metaObject().indexOfProperty()</code> evidence;
+ordinary Python attributes remain ordinary values. Native super calls use the
+measured property/unbound-method fallback. Calls stay in the original Python
+frame, including aliased <code>exec</code>, <code>eval</code>, <code>super</code>, <code>locals</code>, <code>globals</code>, <code>vars</code>, <code>dir</code>.
+Dynamic exec/eval strings receive no call adaptation. <code>importlib</code> imports,
+namespace packages, star imports and nonlocal plugin discovery are not supported.
+These limits are recorded; this runner does not establish whole PySide2 compatibility.</p>
+<p>Only native QObject results from constructors are owned. Arbitrary native API
+returns are borrowed. Cleanup disconnects tracked native signal callbacks, stops
+timers and terminates supported processes/threads, then schedules owned graph
+roots for deletion. Process/thread waits are bounded to 1000 ms each; work that
+fails to stop and its owned ancestors stay retained, with deletion withheld and
+details in <code>cleanup_errors</code>. Native deletion completion still depends on the host
+event loop. <code>parent</code> must be a native QWidget; it applies only to unparented owned
+root widgets when shown or when startup finishes. All UI operations require the
+FontLab main Python thread; QtCore.QThread.currentThread is unavailable here.</p>
+<p>The owned Apache-2.0 example in <code>examples/unchanged_app/app.py</code> imports PySide2
+and has ordinary standalone startup. <code>examples/native_app_acceptance.py</code> supplies
+the external FontLab acceptance driver. Standalone fixtures exercise the algorithm;
+live controller verification is required before claiming host compatibility.</p>
+<p>Three standalone tests validate namespace placement and direct class/signal
+identity. Installed native checks verify QWidget/QColor placement, actual QObject
+class identity, parent identity and a QObject subclass signal: connect, emit 7,
+disconnect, emit 8 delivers only 7. Deletion is scheduled on the host event loop;
+the ownership and lifetime behaviour is verified by the fixtures (see "Unchanged-app
+fixtures (R036)" above).</p>
+<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>venv<span class="w"> </span>--python<span class="w"> </span><span class="m">3</span>.12
+uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-deps<span class="w"> </span>-e<span class="w"> </span>.
+uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>pytest
+./test.sh
+uv<span class="w"> </span>build
+</code></pre></div>
+<p>Install fontlab-echopy alongside this package. Versions use hatch-vcs/Git tags.
+The factual inventory records upstream version and input SHA256 identities;
+no PySide2 runtime, implementation or documentation is redistributed. See NOTICE.</p>
+<h2 id="status">Status</h2>
+<p>Released as v0.2.0 (RELEASE.md): importable routed namespace for <code>fly.qs</code> and the
+compatibility plan. Since then (unreleased, natively accepted in FontLab 9.0.9780,
+Python 3.11.6, Qt 5.15.19; evidence in the workspace
+<code>verification/issue-101-ecosystem/evidence/pqs-inventory/</code> and
+<code>pythonqtside-runner-sdd/</code>):</p>
+<ul>
+<li>Inventory join of the PySide2 5.15.2.1 stubs with the native PythonQt stubs, and
+  exact QtCore/QtGui/QtWidgets routing (559 identities exact, 138 missing names
+  raise, 195 QtWidgets names).</li>
+<li><code>run_app(path)</code> for unchanged PySide2 sources: retained private imports, the
+  host's QApplication behind a scoped proxy, immutable reports, owned cleanup.</li>
+<li>Protected virtual handlers: unchanged <code>super().paintEvent()</code>/
+  <code>super().mousePressEvent()</code> reach the native base.</li>
+<li>Measured adapters (phases 3–3d): <code>(value, ok)</code> out-parameter results through
+  <code>BoolResult</code>, implicit enum-to-value-class conversions with arity-aware
+  exclusions, cached native resolution.</li>
+</ul>
+<p>Unsupported: dynamic exec/eval adaptation, importlib and star imports, global
+application settings, raw-pointer helpers. Detailed phase evidence is in WORK.md.</p>
+<h2 id="documentation-and-acceptance-boundary">Documentation and acceptance boundary</h2>
+<p>The compatibility guide is retained in the genuine source distribution at <code>src_docs/md/pythonqt-compatibility.md</code>. Historical embedded-app planning remains outside authored website inputs and distributions. Inventory data, native fixtures, runtime routing and dependency locks are unchanged. This site performs no native fixture, inventory recapture or owner installation. Private Pages configuration and publication remain owner-held.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+          <div class="md-top" data-md-component="top" hidden>
+  <div class="md-top__center">
+    <button type="button" class="md-top__button md-top__button--main" data-md-action="top">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+      <span>Back to top</span>
+    </button>
+    
+      
+      
+      <label class="md-top__button md-top__side md-top__side--nav" for="__drawer" >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-panel-left" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/></svg>
+      </label>
+    
+    
+      
+      
+      <label class="md-top__button md-top__side md-top__side--toc" for="__toc" >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-panel-right" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M15 3v18"/></svg>
+      </label>
+    
+  </div>
+</div>
+      </main>
+      
+  
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://jaywhj.github.io/mkdocs-materialx/" target="_blank" rel="noopener">
+      MaterialX
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+  <fontlab-footer mode="light"></fontlab-footer>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "code": null, "features": ["search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "code.collapse": "Collapse", "code.download": "Download", "code.expand": "Expand remaining # lines", "code.select": "Toggle line selection", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fc193f93.min.js"></script>
+      
+        <script src="https://i.fontlab.com/fltheme26/1.0.0/basecoat.js"></script>
+      
+        <script src="https://i.fontlab.com/fltheme26/1.0.0/theme.js"></script>
+      
+    
+  </body>
+</html>

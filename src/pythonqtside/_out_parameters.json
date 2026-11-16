@@ -1,0 +1,465 @@
+{
+  "bool_result": {
+    "QtCore.QByteArray": {
+      "toDouble": {
+        "defaults": {},
+        "max_arguments": 0,
+        "out_index": 0,
+        "out_parameter": "ok",
+        "parameters": [],
+        "static": false
+      },
+      "toFloat": {
+        "defaults": {},
+        "max_arguments": 0,
+        "out_index": 0,
+        "out_parameter": "ok",
+        "parameters": [],
+        "static": false
+      },
+      "toInt": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 0,
+        "out_parameter": "ok",
+        "parameters": [],
+        "static": false
+      },
+      "toUShort": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 0,
+        "out_parameter": "ok",
+        "parameters": [],
+        "static": false
+      }
+    },
+    "QtCore.QLocale": {
+      "toDouble": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "s"
+        ],
+        "static": false
+      },
+      "toFloat": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "s"
+        ],
+        "static": false
+      },
+      "toInt": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "s"
+        ],
+        "static": false
+      },
+      "toLongLong": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "s"
+        ],
+        "static": false
+      },
+      "toShort": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "s"
+        ],
+        "static": false
+      },
+      "toUInt": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "s"
+        ],
+        "static": false
+      },
+      "toULongLong": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "s"
+        ],
+        "static": false
+      },
+      "toUShort": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "s"
+        ],
+        "static": false
+      }
+    },
+    "QtCore.QMetaEnum": {
+      "keyToValue": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "key"
+        ],
+        "static": false
+      },
+      "keysToValue": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "keys"
+        ],
+        "static": false
+      }
+    },
+    "QtGui.QAbstractGraphicsShapeItem": {
+      "itemTransform": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "other"
+        ],
+        "static": false
+      }
+    },
+    "QtGui.QGraphicsEllipseItem": {
+      "itemTransform": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "other"
+        ],
+        "static": false
+      }
+    },
+    "QtGui.QGraphicsItem": {
+      "itemTransform": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "other"
+        ],
+        "static": false
+      }
+    },
+    "QtGui.QGraphicsItemGroup": {
+      "itemTransform": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "other"
+        ],
+        "static": false
+      }
+    },
+    "QtGui.QGraphicsLineItem": {
+      "itemTransform": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "other"
+        ],
+        "static": false
+      }
+    },
+    "QtGui.QGraphicsObject": {
+      "itemTransform": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "other"
+        ],
+        "static": false
+      }
+    },
+    "QtGui.QGraphicsPathItem": {
+      "itemTransform": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "other"
+        ],
+        "static": false
+      }
+    },
+    "QtGui.QGraphicsPixmapItem": {
+      "itemTransform": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "other"
+        ],
+        "static": false
+      }
+    },
+    "QtGui.QGraphicsPolygonItem": {
+      "itemTransform": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "other"
+        ],
+        "static": false
+      }
+    },
+    "QtGui.QGraphicsProxyWidget": {
+      "itemTransform": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "other"
+        ],
+        "static": false
+      }
+    },
+    "QtGui.QGraphicsRectItem": {
+      "itemTransform": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "other"
+        ],
+        "static": false
+      }
+    },
+    "QtGui.QGraphicsSimpleTextItem": {
+      "itemTransform": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "other"
+        ],
+        "static": false
+      }
+    },
+    "QtGui.QGraphicsTextItem": {
+      "itemTransform": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "other"
+        ],
+        "static": false
+      }
+    },
+    "QtGui.QGraphicsWidget": {
+      "itemTransform": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "other"
+        ],
+        "static": false
+      }
+    },
+    "QtGui.QInputDialog": {
+      "getDouble": {
+        "defaults": {
+          "decimals": 1,
+          "maxValue": 2147483647.0,
+          "minValue": -2147483647.0,
+          "value": 0.0
+        },
+        "max_arguments": 8,
+        "out_index": 7,
+        "out_parameter": "ok",
+        "parameters": [
+          "parent",
+          "title",
+          "label",
+          "value",
+          "minValue",
+          "maxValue",
+          "decimals"
+        ],
+        "static": true
+      },
+      "getInt": {
+        "defaults": {
+          "maxValue": 2147483647,
+          "minValue": -2147483647,
+          "step": 1,
+          "value": 0
+        },
+        "max_arguments": 8,
+        "out_index": 7,
+        "out_parameter": "ok",
+        "parameters": [
+          "parent",
+          "title",
+          "label",
+          "value",
+          "minValue",
+          "maxValue",
+          "step"
+        ],
+        "static": true
+      },
+      "getItem": {
+        "defaults": {
+          "current": 0,
+          "editable": true
+        },
+        "max_arguments": 8,
+        "out_index": 6,
+        "out_parameter": "ok",
+        "parameters": [
+          "parent",
+          "title",
+          "label",
+          "items",
+          "current",
+          "editable"
+        ],
+        "static": true
+      },
+      "getMultiLineText": {
+        "defaults": {
+          "text": ""
+        },
+        "max_arguments": 6,
+        "out_index": 4,
+        "out_parameter": "ok",
+        "parameters": [
+          "parent",
+          "title",
+          "label",
+          "text"
+        ],
+        "static": true
+      },
+      "getText": {
+        "defaults": {
+          "echo": {
+            "native": "QtGui.QLineEdit.Normal"
+          },
+          "text": ""
+        },
+        "max_arguments": 7,
+        "out_index": 5,
+        "out_parameter": "ok",
+        "parameters": [
+          "parent",
+          "title",
+          "label",
+          "echo",
+          "text"
+        ],
+        "static": true
+      }
+    },
+    "QtGui.QMatrix4x4": {
+      "inverted": {
+        "defaults": {},
+        "max_arguments": 0,
+        "out_index": 0,
+        "out_parameter": "invertible",
+        "parameters": [],
+        "static": false
+      }
+    },
+    "QtNetwork.QLocalServer": {
+      "waitForNewConnection": {
+        "defaults": {
+          "msec": 0
+        },
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "timedOut",
+        "parameters": [
+          "msec"
+        ],
+        "static": false
+      }
+    },
+    "QtNetwork.QTcpServer": {
+      "waitForNewConnection": {
+        "defaults": {
+          "msec": 0
+        },
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "timedOut",
+        "parameters": [
+          "msec"
+        ],
+        "static": false
+      }
+    },
+    "QtSvg.QGraphicsSvgItem": {
+      "itemTransform": {
+        "defaults": {},
+        "max_arguments": 1,
+        "out_index": 1,
+        "out_parameter": "ok",
+        "parameters": [
+          "other"
+        ],
+        "static": false
+      }
+    }
+  },
+  "inventory_sha256": "5cf93af269d8b166acf3b6d60c153547ea1039336d19829edd1b8216c9ea23ee",
+  "predicate": {
+    "QtGui.QMatrix": {
+      "inverted": "isInvertible"
+    },
+    "QtGui.QTransform": {
+      "inverted": "isInvertible"
+    }
+  }
+}

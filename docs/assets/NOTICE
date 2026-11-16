@@ -1,0 +1,7 @@
+Factual API inventories extracted from PySide2 5.15.2.1 module .pyi files and
+FontLab's captured PythonQt declarations. Upstream: The Qt Company Ltd.,
+https://pypi.org/project/PySide2/5.15.2.1/.
+Only public API names, declaration counts, constructor arities and availability
+differences are redistributed, with upstream version and input SHA256 identities.
+No PySide2 implementation, full signatures, documentation or Qt runtime is
+redistributed. The metadata wheel is a parse-only input, not a dependency.

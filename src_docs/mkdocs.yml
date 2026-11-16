@@ -1,0 +1,41 @@
+# this_file: src_docs/mkdocs.yml
+site_name: Pythonqtside
+site_description: 'Pythonqtside: public contracts, installation and runtime boundaries.'
+site_url: https://fontlabcom.github.io/pythonqtside/
+repo_url: https://github.com/fontlabcom/pythonqtside
+repo_name: fontlabcom/pythonqtside
+docs_dir: md
+site_dir: ../docs
+use_directory_urls: true
+theme:
+  name: materialx
+  language: en
+  custom_dir: overrides
+  palette:
+    scheme: default
+  features:
+    - search.highlight
+    - content.code.copy
+plugins:
+  - search:
+      lang: [en]
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.highlight
+  - pymdownx.superfences
+nav:
+  - Index: index.md
+  - Installation: installation.md
+  - Pythonqt Compatibility: pythonqt-compatibility.md
+  - Development And Limits: development-and-limits.md
+  - Licence: licence.md
+extra_css:
+  - stylesheets/local.css
+  - https://i.fontlab.com/fltheme26/1.0.0/components.css
+  - https://i.fontlab.com/fltheme26/1.0.0/theme.css
+extra_javascript:
+  - https://i.fontlab.com/fltheme26/1.0.0/basecoat.js
+  - https://i.fontlab.com/fltheme26/1.0.0/theme.js
+hooks:
+  - english_search.py

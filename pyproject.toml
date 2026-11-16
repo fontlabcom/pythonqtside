@@ -1,0 +1,31 @@
+# this_file: pyproject.toml
+[build-system]
+requires = ["hatchling>=1.27", "hatch-vcs>=0.4"]
+build-backend = "hatchling.build"
+[project]
+name = "pythonqtside"
+dynamic = ["version"]
+description = "Native FontLab PythonQt namespace adapter and compatibility plan"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+dependencies = ["fontlab-echopy>=0.1.0"]
+[project.urls]
+Repository = "https://github.com/fontlabcom/pythonqtside"
+[project.optional-dependencies]
+test = ["pytest>=8"]
+[tool.hatch.version]
+source = "vcs"
+[tool.hatch.version.raw-options]
+fallback_version = "0.1.0"
+[tool.hatch.build.targets.wheel]
+packages = ["src/pythonqtside"]
+[tool.hatch.build.targets.sdist]
+only-include = ["install.vfpy", "src", "tests", "examples", "src_docs/md/pythonqt-compatibility.md", "pyproject.toml", "README.md", "PLAN.md", "TODO.md", "LICENSE", "NOTICE", "CHANGELOG.md", "DEPENDENCIES.md", "test.sh"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+[tool.fontlab-install]
+# install.vfpy: reverse-domain id; FontLab keeps Extensions/<id>/install.log.
+id = "com.fontlab.pythonqtside"

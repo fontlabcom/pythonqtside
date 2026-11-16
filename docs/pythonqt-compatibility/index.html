@@ -1,0 +1,859 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Pythonqtside: public contracts, installation and runtime boundaries.">
+      
+      
+      
+        <link rel="canonical" href="https://fontlabcom.github.io/pythonqtside/pythonqt-compatibility/">
+      
+      
+        <link rel="prev" href="../installation/">
+      
+      
+        <link rel="next" href="../development-and-limits/">
+      
+      
+        
+      
+      
+      
+      
+        
+        
+        
+          <link rel="icon" href="../assets/images/favicon.png">
+        
+      
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-materialx-10.1.8">
+    
+    
+      
+        <title>Pythonqt Compatibility - Pythonqtside</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.314bbef5.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a45159b5.min.css">
+      
+    
+    
+
+    
+
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/local.css">
+    
+      <link rel="stylesheet" href="https://i.fontlab.com/fltheme26/1.0.0/components.css">
+    
+      <link rel="stylesheet" href="https://i.fontlab.com/fltheme26/1.0.0/theme.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <script src="https://i.fontlab.com/menu/fontlab.js" defer></script>
+
+  </head>
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" data-mx-topbar="glass">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="toc" type="checkbox" id="__toc" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <label class="md-overlay" for="__toc"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pyside2-compatibility-in-fontlab" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+  <fontlab-menu mode="light" site-label="Pythonqtside"
+                site-url="https://fontlabcom.github.io/pythonqtside/"
+                mobile-menu="materialx" mobile-search="materialx"></fontlab-menu>
+  
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Pythonqtside" class="md-header__button md-logo" aria-label="Pythonqtside" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pythonqtside
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Pythonqt Compatibility
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.25 2a8.25 8.25 0 0 1 6.34 13.53l5.69 5.69a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215l-5.69-5.69A8.25 8.25 0 1 1 10.25 2M3.5 10.25a6.75 6.75 0 1 0 13.5 0 6.75 6.75 0 0 0-13.5 0"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.25 2a8.25 8.25 0 0 1 6.34 13.53l5.69 5.69a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215l-5.69-5.69A8.25 8.25 0 1 1 10.25 2M3.5 10.25a6.75 6.75 0 1 0 13.5 0 6.75 6.75 0 0 0-13.5 0"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fontlabcom/pythonqtside" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fontlabcom/pythonqtside
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Pythonqtside" class="md-nav__button md-logo" aria-label="Pythonqtside" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Pythonqtside
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fontlabcom/pythonqtside" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    fontlabcom/pythonqtside
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pythonqt Compatibility
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pythonqt Compatibility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="#what-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lifetime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lifetime
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#not-supported" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Not supported
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#landmines-found-while-measuring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Landmines found while measuring
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#native-acceptance-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Native acceptance command
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development-and-limits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development And Limits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="#what-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lifetime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lifetime
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#not-supported" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Not supported
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#landmines-found-while-measuring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Landmines found while measuring
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#native-acceptance-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Native acceptance command
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+  
+
+
+<h1 id="pyside2-compatibility-in-fontlab">PySide2 compatibility in FontLab</h1>
+<p>FontLab 9 ships PythonQt (Qt 5.15, Python 3.11), not PySide2. <code>pythonqtside</code> lets
+PySide2 code run there in two ways:</p>
+<ul>
+<li><code>run_app("app.py")</code> runs an unchanged PySide2 source inside FontLab and adapts
+  every call in it (table below), without touching the file.</li>
+<li><code>pythonqtside.QtWidgets</code> and friends give new code the native classes under
+  PySide2 module names, and <code>pythonqtside.compat</code> offers the adapters one call at
+  a time (<code>pyside_method</code>, <code>pyside_construct</code>).</li>
+</ul>
+<p>Every "adapted" row was measured in FontLab 9.0.9780 first; evidence lives in the
+workspace under <code>verification/issue-101-ecosystem/evidence/</code> (<code>pqs-inventory/</code>,
+<code>pqs-g04/</code>).</p>
+<h2 id="what-works">What works</h2>
+<table>
+<thead>
+<tr>
+<th>PySide2 feature</th>
+<th>Native PythonQt behaviour</th>
+<th>In <code>run_app</code></th>
+<th>Outside <code>run_app</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>from PySide2 import QtCore, QtGui, QtWidgets, ...</code></td>
+<td>no PySide2 module</td>
+<td>routed to native classes (559 identities)</td>
+<td><code>from pythonqtside import QtWidgets</code></td>
+</tr>
+<tr>
+<td><code>QApplication(sys.argv)</code>, <code>app.exec_()</code></td>
+<td>must never be created</td>
+<td>proxy to FontLab's application; <code>exec_()</code> returns 0</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>Getters: <code>label.text()</code>, <code>widget.width()</code></td>
+<td>properties are values</td>
+<td>adapted; all 4,624 measured names covered</td>
+<td><code>compat.pyside_method(label, "text")()</code></td>
+</tr>
+<tr>
+<td>Keyword arguments: <code>QLabel("x", parent=w)</code>, <code>resize(w=, h=)</code></td>
+<td>every native call rejects keywords</td>
+<td>mapped to positions (<code>_keywords.json</code>)</td>
+<td><code>compat.pyside_construct</code>, <code>compat.pyside_method</code></td>
+</tr>
+<tr>
+<td>Constructor property/signal keywords: <code>QTimer(interval=50)</code>, <code>QPushButton("OK", clicked=f)</code></td>
+<td>rejected</td>
+<td>set/connected after construction</td>
+<td><code>compat.pyside_construct</code></td>
+</tr>
+<tr>
+<td><code>(value, ok)</code> results: <code>QInputDialog.getText</code>, <code>QLocale.toInt</code></td>
+<td>single value, <code>BoolResult</code> slot</td>
+<td>tuple, as PySide2 (39 methods)</td>
+<td><code>compat.pyside_method</code></td>
+</tr>
+<tr>
+<td>Enum where a value class is expected: <code>setEasingCurve(QEasingCurve.OutElastic)</code></td>
+<td>"wrong arguments"</td>
+<td>wrapped (610 positions)</td>
+<td><code>compat.pyside_method</code></td>
+</tr>
+<tr>
+<td>QFlags with a competing enum overload: <code>QDialogButtonBox(Ok \| Cancel)</code></td>
+<td><code>Ok \| Cancel</code> is an int; the <code>Orientation</code> overload wins, no buttons</td>
+<td>wrapped in the flags class (12 positions)</td>
+<td>pass <code>QDialogButtonBox.StandardButtons(...)</code></td>
+</tr>
+<tr>
+<td><code>clicked.connect(label.clear)</code> (slot takes fewer arguments)</td>
+<td>native slot gets every signal argument and fails</td>
+<td>forwarded with Qt-style trimming</td>
+<td>connect a <code>lambda</code></td>
+</tr>
+<tr>
+<td><code>process.finished.connect(lambda code, status: ...)</code></td>
+<td>connects the deprecated <code>finished(int)</code>; the callback never runs</td>
+<td>the overload matching the callback's arity</td>
+<td><code>process.connect("2finished(int,QProcess::ExitStatus)", cb)</code></td>
+</tr>
+<tr>
+<td><code>path, _ = QFileDialog.getOpenFileName(...)</code> (also <code>getSaveFileName</code>, <code>getOpenFileNames</code>)</td>
+<td>bare path (str) or tuple of paths</td>
+<td><code>(path, "")</code>; the chosen filter cannot be read back; PySide2 positional <code>(parent, caption, dir, filter, options)</code> is passed to native as <code>(parent, caption, dir, filter, "", options)</code>; a <code>selectedFilter=</code> keyword raises TypeError (PySide2 has none); class or instance receivers</td>
+<td><code>compat.pyside_method</code></td>
+</tr>
+<tr>
+<td><code>bytes(process.readAllStandardOutput())</code></td>
+<td><code>TypeError</code></td>
+<td><code>data()</code> used</td>
+<td><code>qbytearray.data()</code></td>
+</tr>
+<tr>
+<td><code>super().paintEvent(event)</code> in a subclass</td>
+<td><code>super()</code> misses protected handlers</td>
+<td>forwarded to the native base</td>
+<td><code>QtGui.QPlainTextEdit.paintEvent(self, event)</code></td>
+</tr>
+<tr>
+<td>Custom <code>Signal</code>, <code>Slot</code>, <code>Property(int, get, set, notify=...)</code>, event filters, virtual overrides</td>
+<td>native</td>
+<td>work unchanged (fixture <code>signals</code>)</td>
+<td>same</td>
+</tr>
+<tr>
+<td>Model/view with Python models and delegates</td>
+<td>native</td>
+<td>work unchanged (fixture <code>modelview</code>)</td>
+<td>same</td>
+</tr>
+<tr>
+<td><code>QUiLoader().load(QFile(...))</code></td>
+<td>native</td>
+<td>works; the loaded widget is owned and closed with the app</td>
+<td>close it yourself</td>
+</tr>
+<tr>
+<td><code>QTimer</code>, <code>QProcess</code></td>
+<td>native</td>
+<td>stopped/killed by <code>handle.close()</code></td>
+<td>stop them yourself</td>
+</tr>
+</tbody>
+</table>
+<p>Keyword mapping covers direct calls, <code>super().method(...)</code>, <code>Base.__init__(self, ...)</code>,
+<code>super().__init__(...)</code> and a native method stored first and called later with
+keywords. Signal-overload selection also follows an aliased signal
+(<code>finished = process.finished; finished.connect(cb)</code>) or a stored <code>connect</code>, for
+owned and borrowed senders alike: a PythonQt signal's only GC referent is its owner
+and its repr carries the owner's <code>id</code> (measured).</p>
+<p>Stored bound native methods and native <code>super()</code> calls also receive out-parameter,
+enum-conversion and QFlags adapters with positional or keyword arguments. Native
+base dispatch is retained even when a Python subclass overrides the method.</p>
+<h2 id="lifetime">Lifetime</h2>
+<ul>
+<li>Only objects the app constructs (and <code>QUiLoader.load()</code> results) belong to its
+  handle; values returned by other API calls are borrowed.</li>
+<li><code>handle.close()</code> disconnects the app's tracked connections, stops timers, kills
+  processes, then closes and <code>deleteLater()</code>s its root objects. Deletion completes
+  when FontLab's event loop next runs, not within the same <code>run_python</code> call.</li>
+<li>A wrapper of a deleted QObject raises <code>ValueError: Trying to call 'x' on a
+  destroyed QLabel object</code>. There is no <code>QtCore.QPointer</code>; that error is the
+  validity check.</li>
+<li>After <code>close()</code>, app code that a kept Python object still runs raises
+  <code>RuntimeError: The embedded application handle is closed</code>, or <code>NameError</code> once it
+  reads a module global, because the app's globals are released.</li>
+</ul>
+<h2 id="not-supported">Not supported</h2>
+<ul>
+<li>PySide2 enum members missing natively (2,679 names) and opaque nested enums.</li>
+<li>217 PySide2 tuple-returning methods without a native flag (for example
+  <code>getRgb</code>) and their keywords. The three QFileDialog pickers are adapted but report an empty selected filter.</li>
+<li><code>exec</code>/<code>eval</code> strings, <code>importlib</code> imports, star imports, namespace packages,
+  application subclasses and global application settings.</li>
+<li>Qt 6 and anything PySide2 adds on top of Qt (<code>QtCore.Property</code> decorators other
+  than the call form above are untested).</li>
+</ul>
+<h2 id="landmines-found-while-measuring">Landmines found while measuring</h2>
+<p>These crash FontLab; <code>run_app</code> avoids the first one, the others need care in any
+script:</p>
+<ol>
+<li>Disconnecting a signal on a receiver that holds both a native slot
+   (<code>buttons.rejected.connect(self.reject)</code>) and a bound method of the same object
+   (<code>buttons.accepted.connect(self.submit)</code>) segfaults in PythonQt's slot
+   comparison. Connect a <code>lambda</code> instead of the native slot.</li>
+<li>Reading the <code>currentFrame</code> property of an empty <code>QSvgRenderer</code> segfaults.</li>
+<li>Unary minus on a wrapper (<code>-QPoint(1, 2)</code>) segfaults.</li>
+</ol>
+<h2 id="native-acceptance-command">Native acceptance command</h2>
+<p>Run the seven unchanged-app fixtures (<code>examples/fixtures/</code>) in a running FontLab
+with external MCP clients enabled:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>../fontlab-remopy
+uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>../pythonqtside/examples/fixtures/run_native.py<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--pythonqtside<span class="w"> </span>../pythonqtside/src<span class="w"> </span>--echopy<span class="w"> </span>../fontlab-echopy/src
+</code></pre></div>
+<p>It prints a JSON report and exits 1 if any check fails. Point <code>--pythonqtside</code> at
+an extracted wheel to check a built artifact. The owned-font fixture
+(<code>run_native_font.py</code>) edits, saves and reopens a font FontLab creates for the
+run; use it only in a FontLab session without your own documents.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+          <div class="md-top" data-md-component="top" hidden>
+  <div class="md-top__center">
+    <button type="button" class="md-top__button md-top__button--main" data-md-action="top">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+      <span>Back to top</span>
+    </button>
+    
+      
+      
+      <label class="md-top__button md-top__side md-top__side--nav" for="__drawer" >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-panel-left" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/></svg>
+      </label>
+    
+    
+      
+      
+      <label class="md-top__button md-top__side md-top__side--toc" for="__toc" >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-panel-right" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M15 3v18"/></svg>
+      </label>
+    
+  </div>
+</div>
+      </main>
+      
+  
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://jaywhj.github.io/mkdocs-materialx/" target="_blank" rel="noopener">
+      MaterialX
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+  <fontlab-footer mode="light"></fontlab-footer>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "code": null, "features": ["search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "code.collapse": "Collapse", "code.download": "Download", "code.expand": "Expand remaining # lines", "code.select": "Toggle line selection", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fc193f93.min.js"></script>
+      
+        <script src="https://i.fontlab.com/fltheme26/1.0.0/basecoat.js"></script>
+      
+        <script src="https://i.fontlab.com/fltheme26/1.0.0/theme.js"></script>
+      
+    
+  </body>
+</html>
