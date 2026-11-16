@@ -29,3 +29,6 @@ pythonpath = ["src"]
 [tool.fontlab-install]
 # install.vfpy: reverse-domain id; FontLab keeps Extensions/<id>/install.log.
 id = "com.fontlab.pythonqtside"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/pythonqtside/__version__.py"

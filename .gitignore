@@ -11,3 +11,4 @@ uv.lock
 .superpowers/
 .worktrees/
 *.vfpyc
+src/pythonqtside/__version__.py
