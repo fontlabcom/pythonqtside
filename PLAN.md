@@ -22,7 +22,7 @@ Issue 123 implementation remains paused; its acceptance backlog below is preserv
 
 Verify current inventory/routing against the supported FontLab PythonQt binding. Keep actual overloads, properties, virtuals, enums, ownership and callbacks host/build-specific. Standalone Qt6/PySide6 tests do not add a Qt6 backend inside FontLab. Never load a second Qt binding or create QApplication in the host.
 
-Natively check the QFileDialog tuple adapter and `examples/pyside2_dialog.py` against the retained Issue201 contract. Remove the adapter if native pickers already return tuples. Preserve the measured difference rather than assuming a PySide convention.
+Natively check the QFileDialog tuple adapter and `examples/pyside2_dialog.py` against the retained Issue201 contract. The adapter stays: live signatures measured 2026-11-10 show native pickers return `str` (and a plain tuple for `getOpenFileNames`), not `(path, filter)` pairs. Preserve the measured difference rather than assuming a PySide convention.
 
 ## Artifact and cohort acceptance
 

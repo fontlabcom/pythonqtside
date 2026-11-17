@@ -2,6 +2,13 @@
 this_file: CHANGELOG.md
 ---
 
+## 2026-11-17 — Issue 258 task cleanup
+
+- Removed the TODO row "Verify compatibility against the actual supported FontLab binding": duplicate of the native-half row (inventory/`native_host`) and the QFileDialog rows that remain.
+- PLAN no longer says to remove the QFileDialog adapter if native pickers return tuples. The 2026-11-10 "QFileDialog adapter kept (Issue 250 live signatures)" entry in this file measured `str` returns, so the adapter stays.
+- Inventory regeneration half of the native row is done: see the 2026-11-11 "Inventory regeneration matches the committed files" entry. Built wheel contents and the real-Echopy-wheel tuple are pinned by `tests/test_packaging.py` (2026-11-11 entries).
+- Documentation only; no source or native change.
+
 ## 1.1.12 (2026-11-16)
 
 - `install.vfpy` is now the short fontlab-instamix stub. It installs
