@@ -2,6 +2,13 @@
 this_file: CHANGELOG.md
 ---
 
+## 2026-11-17 — Installer stub from instamix 1.0.15 (Issue 259 follow-ups)
+
+- `install.vfpy` is now the stub from fontlab-python-instamix 1.0.15. It replaces an
+  installed instamix older than 1.0.13 and puts the old copy back if the upgrade
+  fails; linked checkouts and local builds are kept. A download that fails for
+  lack of root certificates (FontLab 9 for macOS) is retried with the system curl.
+
 ## 2026-11-17 — Issue 258 task cleanup
 
 - Removed the TODO row "Verify compatibility against the actual supported FontLab binding": duplicate of the native-half row (inventory/`native_host`) and the QFileDialog rows that remain.
