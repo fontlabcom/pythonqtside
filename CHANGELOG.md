@@ -15,7 +15,10 @@ Copied the reviewed shared installer exactly: dependency constraints and managed
 
 Focused checks: 4 passed, 2 deselected in 1.30s. This qualifies the local source candidate only. Independent review, combined-main/full delivery gates, genuine release/downloads, installed provider closure and admitted FontLab/native workflows remain separate. No owner-folder installation or native operation ran.
 
+## 2026-11-14 — Functional work order documented
 
+- Added the owner's functional-progress-first guidance and repository-specific priorities, including cross-package compatibility and a later detailed testing pass. Existing mandatory hooks, holds and unfinished work remain in force.
+- This change updates guidance and planning only; it establishes no new runtime, installed, native or release result.
 
 ## 2026-11-12 — D46 documentation pass (Issue 250)
 

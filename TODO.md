@@ -11,6 +11,8 @@ this_file: TODO.md
 
 # Open tasks
 
+- [ ] Reconcile the next PythonQt routing/dialog fix with matching Echopy inventories and App/Glyport consumers using focused checks before the detailed host/ownership pass.
+
 - [ ] Match the inventories and routing to the supported FontLab PythonQt build (the native half): `native_host` versions in Echopy's `_provenance.json` are still null, and standalone PySide6 tests never establish native Qt 6 support. Whenever Echopy regenerates the PythonQt stubs, rerun the regeneration diff (`_inventory.json`, `_qtwidgets.json`) and compare byte for byte.
 - [ ] Qualify QFileDialog tuple adaptation, overloads, properties, virtuals and ownership in the actual host, plus genuine artifacts and ordinary dependency resolution.
 - [ ] Run the exact repository checks on the integrated source, obtain independent review, commit/push the scoped milestone and verify its remote head.

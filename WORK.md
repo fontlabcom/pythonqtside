@@ -12,4 +12,10 @@ Focused checks: 4 passed, 2 deselected in 1.30s. This qualifies the local source
 
 # Work in progress
 
+## 2026-11-14 — Functional work order documented
+
+Updated AGENTS, PLAN and TODO to prioritize useful functional changes and compatible package boundaries, with detailed testing deferred. Existing backlog and prior records are retained. Documentation preservation and policy consistency were checked; no runtime, installed or native checks ran in this documentation-only pass.
+
+Next: reconcile the next PythonQt routing/dialog fix with matching Echopy inventories and App/Glyport consumers using focused checks before the detailed host/ownership pass.
+
 Earlier WORK.md (96,480 bytes, SHA256 `b83eb186843cc601e37cbab49102faa9075e5f2a7a679f2b9efd0ca89e4a22b2`) is archived on the owner's workspace data volume (not public) under `issue250/work-archives/` (Issue 250). Completed work is in CHANGELOG.md; open work is in TODO.md and PLAN.md.
