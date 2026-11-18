@@ -12,3 +12,20 @@ uv.lock
 .worktrees/
 *.vfpyc
 src/pythonqtside/__version__.py
+
+# Python and macOS (pypitrust)
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Python and macOS (pypitrust)
+__version__.py
+_version.py
